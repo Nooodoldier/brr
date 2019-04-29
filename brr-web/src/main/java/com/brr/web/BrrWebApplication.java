@@ -8,6 +8,7 @@ public class BrrWebApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(BrrWebApplication.class, args);
+        System.out.println("brr启动成功--------------OK！");
     }
 
 }
