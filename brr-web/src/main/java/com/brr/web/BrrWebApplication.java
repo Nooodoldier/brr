@@ -3,6 +3,9 @@ package com.brr.web;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 聚合项目入口
+ */
 @SpringBootApplication
 public class BrrWebApplication {
 
