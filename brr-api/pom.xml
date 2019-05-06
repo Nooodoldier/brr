@@ -12,10 +12,11 @@
     <artifactId>brr-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <dependencies>
+        <!--模块依赖-->
         <dependency>
             <groupId>com.brr</groupId>
             <artifactId>brr-model</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <!--模块依赖-->
     </dependencies>
 </project>
