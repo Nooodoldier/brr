@@ -30,24 +30,20 @@
             <groupId>com.brr</groupId>
             <artifactId>brr-common</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.brr</groupId>
+            <artifactId>brr-service</artifactId>
+        </dependency>
         <!--模块依赖-->
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-        </dependency>
-
     </dependencies>
-
-
+    <build>
+        <!-- 配置了很多插件 -->
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

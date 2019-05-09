@@ -1,0 +1,29 @@
+
+spring:
+  profiles:
+    active: dev
+  #  tomcat:
+  #    uri-encoding: UTF-8
+  #  session:
+  #    timeout:
+  #热部署
+  devtools:
+    restart:
+      enabled: true #热部署生效
+      #设置重启的目录
+      additional-paths: src/main/java
+      exclude: WEB-INF/** #classpath目录下的WEB-INF文件夹内容修改不重启
+  # spring mvc 视图解析器
+  mvc:
+    view:
+      prefix: /WEB-INF/views
+      suffix: .jsp
+#  jpa:
+#    hibernate:
+#      ddl-auto: update # create (自动创建表,要先创建类,每次都是先删再创建) update：如果表存在则不创建，只在第一次初始化时创建表
+#    show-sql: true
+
+mybatis:
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  type-aliases-package: com.brr.model
+
