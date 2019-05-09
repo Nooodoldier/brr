@@ -146,7 +146,7 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-        <!--排除内置tomcat jar包,防止打包之后与外面Tomcat jar 包冲突，导致项目启动失败-->
+        <!--排除内置tomcat jar包,防止打包之后与外面Tomcat jar 包冲突，导致项目启动失败,以war包方式启动时用-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
